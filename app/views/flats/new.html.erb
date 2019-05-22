@@ -1,0 +1,14 @@
+
+<div class="container">
+  <h1>Add a Flat!</h1>
+
+  <%= simple_form_for [@flat] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :price_per_night %>
+    <%= f.input :address %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :description %>
+    <%= f.submit "Add Flat", class: "btn btn-primary" %>
+    <%= link_to "Home", flats_path, class: 'btn btn-dark' %>
+  <% end %>
+</div>
